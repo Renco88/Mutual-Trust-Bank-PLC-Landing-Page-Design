@@ -4,16 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mutual Trust Bank PLC Landing Page Design</title>
+    <script src="https://kit.fontawesome.com/e77d7ec9f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
+        <!-- top ber -->
+         <section class="headerbar-container">
+            <div class="social-media-icon">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-linkedin-in"></i></div>
+                <div><i class="fa-brands fa-youtube"></i></div>
+            </div>
+
+            <div class="contruct-search">
+                <div><img src="image/icon/Support.png" alt="">16219|+08809604016219</div>
+                <div><a href=""><img src="image/icon/Searchsearch.png" alt=""> SEARCH</a></div>
+
+            </div>
+            <div>
+                <a href=""><img src="image/icon/Locationslocation.png" alt="">ATM/BRANCH</a> 
+            </div>
+            <div>
+               <a href=""> <img src="image/icon/LanguageLanguages.png" alt="">LANGUAGES</a>
+            </div>
+
+            <div>
+               <a href=""><img src="image/icon/iBankingibanking.png" alt="">IBANKING LOGIN</a> 
+
+            </div>
+         </section>
+         <!-- nav  -->
+
+    <section class="nav-container">
+        <nav class="nav-container-file">
+            <div><img src="image/icon/mtb-plc-logo 1mtb-logo.png" alt=""></div>
+            <div>
+                <ul class="nav-item">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Ratail & cards</a></li>
+                    <li><a href="">Banking</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Other</a></li>
+                    
+                </ul>
+        </div >
+            <div id="open-bank-account" ><a class=" btn-primary" href="">Open an account</a></div>
+
+        </nav>
+        
+    </section>
+    <!-- banner -->
+
+    <section class="banner-container">
+        <div class="banner-text">
+            <p class="banner-box-text"><span id="banner-new-colour" >New</span> Payment system upgraded🔥</p>
+            <h3 class="banner-header-text">Banking with a Smile,<br>
+                Trusting Us with Your Future</h3>
+            <p class="banner-pra-text">We safeguard your dreams with reliable and innovative banking solutions.</p>
+            <button class="btn-primary">Open an Account </button>
+            <button class="btn-bleck">Explore our Services</button>
+        </div>
+        <div ><img src="image/image.png" alt=""></div>
+    </section>
 
     </header>
     <main>
+        <!-- our partner program -->
+         <section class="partner-container">
+            <div>
+                <p>Let's go</p>
+                <h4>Our Partner Program</h4>
+             </div>
+             <div class="partner-logo">
+                <img class="partner-logo" src="image/logo/measy-logo-tm 1.png" alt="">
+                <img class="partner-logo"  src="image/logo/angona-logo-tm 1.png" alt="">
+                <img class="partner-logo" src="image/logo/air-lounge-logo-tm 1.png" alt="">
+                <img class="partner-logo" src="image/logo/yaqeen-logo 1.png" alt="">
+                <img class="partner-logo" src="image/logo/footer-logo 1.png" alt="">
+                
+             </div>
+         </section>
+
+         <!-- service -->
+
+         <section class="service-container">
+            <div>
+                <p class="service-pra">Let us guide you</p>
+                <h3 class="service-header-text">Which service are you looking for?</h3>
+
+            </div>
+            <div class="service-img">
+                <div class="service">
+                    <img src="image/card/Deposite.png" alt="">
+                        <p>Deposit Product</p>
+                    </img>
+                </div>
+                <div class="service">
+                    <img src="image/card/Loan.png" alt="">
+                        <p>Loan Product</p>
+                    </img>
+                </div>
+                <div class="service">
+                    <img src="image/card/Card.png" alt="">
+                        <p>MTB Cards</p>
+                    </img>
+                </div>
+                <div class="service">
+                    <img src="image/card/Exchange Rate.png" alt="">
+                        <p>Exchange Rate</p>
+                    </img>
+                </div>
+            </div>
+            <button id="btn-service" class="btn-primary ">Explore More</button>
+      </section>
+      <!-- currancy rate  -->
+
+      <section class="currancy-continer">
+       
+
+        <div class="currancy-box">
+            <div class="currancy-text-container">
+                <p class="currancy-text-pra">Exchange Rate 🔥</p>
+               <h3 class="currancy-text">Calculate Today's Currency Rates</h3> 
+            </div>
+            <div class="currancy-box-flex">
+                   <div class="currancy-calculation-box" >
+                        <label for="amount">Enter Amount</label> <br>
+                        <input type="number" id="amount" placeholder="Enter amount"><br>
+                        <div class="input-group">
+                            <div class="Select-Currency">
+                                    <label for="from-currency">Select Currency</label><br>
+                                    <select id="from-currency">
+                                    <option value="BDT">BDT - Bangladeshi taka</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    </select>
+                            </div><br>
+                           
+                            
+                            <div class="input-group">
+                                <label for="to-currency">Select Exchange Currency</label> <br>
+                                <select id="to-currency">
+                                    <option value="USD">USD - United States Dollar</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    
+                                </select>
+                            </div><br>
+                
+                            <button type="button" class="convert-btn" onclick="convertCurrency()">Convert</button>
+                        </div>
+                    </div>
+                
+            
+           
+
+
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                           <th>Currency</th>
+                           <th>Buying(TT)</th>
+                           <th>Selling(BC)</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>USD</td>
+                            <td>119,000</td>
+                            <td>119,000</td>
+                        </tr>
+                        <tr>
+                            <td>GBP</td>
+                            <td>119,000</td>
+                            <td>119,000</td>
+                        </tr>
+                        <tr>
+                            <td>EUR</td>
+                            <td>119,000</td>
+                            <td>119,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+           
+        </div>
+
+      </section>
+
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
